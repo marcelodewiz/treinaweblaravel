@@ -24,6 +24,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ route('clients.index') }}">Clientes</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{ route('projects.index') }}">Projetos</a>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -37,4 +37,14 @@ class Employee extends Model
     public function address(){
         return $this->hasOne(Address::class);
     }
+
+    /**
+     * relação com projetos
+     *
+     * @return void
+     */
+    public function projects()
+    {
+        return $this->belongsToMany(Project::class);
+    }
 }

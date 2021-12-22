@@ -17,6 +17,11 @@ class Project extends Model
      * @return void
      */
     public function client(){
-        return $this->belongsTo(Project::class, 'client_id','id');
+        return $this->belongsTo(Client::class, 'client_id','id');
+    }
+
+    public function employees()
+    {
+        return $this->belongsToMany(Employee::class);
     }
 }
